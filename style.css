@@ -34,6 +34,11 @@ nav.scrolled {
   color: #fff;
 }
 
+nav .logo {
+  font-weight: 700;
+  font-size: 18px;
+}
+
 nav a {
   margin-left: 20px;
   text-transform: uppercase;
@@ -346,6 +351,14 @@ img {
   padding: 10px;
   width: 100%;
   font-weight: 700;
+  text-align: center;
+  padding-block: 30px;
+}
+
+.tab-icon {
+  font-size: 24px;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .tab.active {
@@ -402,6 +415,7 @@ img {
 
 [data-tab-content] .price {
   padding: 10px;
+  padding-right: 20px;
 }
 
 [data-tab-content] .content-image {
@@ -411,6 +425,54 @@ img {
 
 [data-tab-content] .price-content {
   font-weight: 600;
+}
+
+section.events .event-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+section.events .event {
+  padding: 20px 40px;
+  background-color: #fff;
+  display: flex;
+  width: fit-content;
+  gap: 20px;
+}
+
+section.events .event-name {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+section.events .event-countdown {
+  background-color: #ffb606;
+  padding: 20px;
+}
+
+section.events .countdown-item {
+  background-color: transparent;
+  padding: 15px;
+  display: inline-block;
+}
+
+section.events .countdown-item > p {
+  color: #fff;
+  opacity: 1;
+}
+
+section.events .countdown-item-value {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+section.events .countdown-item-name {
+  font-size: 14px;
+}
+
+section.events .countdown-items > :nth-child(2) {
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 950px) {
