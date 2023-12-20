@@ -14,5 +14,24 @@ hamburger.addEventListener('click', () => {
   nav.classList.toggle('active');
 });
 
+<<<<<<< HEAD
 
 
+=======
+const tabs = document.querySelectorAll('[data-tab-target]');
+const tabContents = document.querySelectorAll('[data-tab-content]');
+
+tabs.forEach((tab) => {
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.tabTarget);
+    tabContents.forEach((tabContent) => {
+      tabContent.classList.remove('active');
+    });
+    tabs.forEach((tab) => {
+      tab.classList.remove('active');
+    });
+    target.classList.add('active');
+    tab.classList.add('active');
+  });
+});
+>>>>>>> 692639c45186efb0749bb1c751ed71a60634cc67
