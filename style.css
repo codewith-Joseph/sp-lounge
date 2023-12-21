@@ -159,15 +159,14 @@ header {
   position: relative;
   height: 100vh;
   width: 100%;
+
+background-image: url(./public/hero-image-1.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
-.overlay-image {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+
 
 header .overlay {
   position: absolute;
@@ -234,7 +233,13 @@ section.section-default {
 
 .overlay-section {
   position: relative;
+
+  background-image: url(./public/about-image-1.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
+
 
 .overlay-section .section-heading {
   position: relative;
