@@ -267,7 +267,6 @@ section {
   position: relative;
   z-index: 20;
 }
-
 section.about-us .content-wrapper {
   display: flex;
   align-items: center;
