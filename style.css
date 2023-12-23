@@ -522,7 +522,14 @@ section.events .countdown-item-name {
   .hamburger.active .bar:nth-child(3) {
     transform: rotate(-45deg) translateY(-11.5px);
   }
-
+  nav {
+    padding: 10px;
+    background: transparent;
+    backdrop-filter: blur(7px);
+  }
+  nav a {
+    color: #ffb606;
+  }
   nav.active {
     height: 100vh;
     background-color: rgb(34, 34, 34);
@@ -579,9 +586,13 @@ section.events .countdown-item-name {
 
 @media screen and (max-width: 750px) {
   nav {
-    padding: 20px;
+    padding: 15px;
+    background: transparent;
+    backdrop-filter: blur(7px);
   }
-
+  nav a {
+    color: #ffb606;
+  }
   section {
     padding: 100px 20px;
   }
