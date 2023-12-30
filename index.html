@@ -5,6 +5,34 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Bar In Abuja - 44 SAO PAULO Lounge Garki</title>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"
+      integrity="sha256-A+2opyqhvbBV8tbd9mIM8w9zvvMYHOawY03BQRtq7Kw="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css"
+    />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
@@ -22,36 +50,115 @@
   </head>
   <body>
     <header>
-      <nav id="mainnav" class="mainnav">
-        <a class="logo">44 SAO PAULO Lounge </a>
-        <div class="menu-wrapper">
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+      <div
+        uk-sticky="start: 170; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; offset: 0"
+      >
+        <nav class="uk-navbar-container">
+          <div class="uk-container uk-container-expand">
+            <div uk-navbar>
+              <div class="uk-navbar-left">
+                <a
+                  href="/
+            "
+                  class="logo"
+                  >44 SAO PAULO Lounge</a
+                >
+              </div>
+              <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav uk-visible@s">
+                  <li class="uk-active"><a href="/">Home</a></li>
+                  <li>
+                    <a href="/events/">Events</a>
+                    <div class="uk-navbar-dropdown">
+                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li>
+                          <a href="/events/ladies-night"> Ladies Night</a>
+                        </li>
+                        <li>
+                          <a href="/events/birthday-parties/">
+                            Birthday Parties</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="/reservations/">Reservations</a>
+                  </li>
+                  <li>
+                    <a href="/about-us/">About Us</a>
+                  </li>
+                  <li>
+                    <a href="/contact/"> Contact </a>
+                  </li>
+                </ul>
+                <a
+                  href="#"
+                  class="uk-navbar-toggle uk-hidden@s"
+                  uk-navbar-toggle-icon
+                  uk-toggle="target: #sidenav"
+                ></a>
+              </div>
+            </div>
           </div>
-          <ul class="menu">
-            <li><a href="/">Home</a></li>
-            <li><a href="overview.html">About Us</a></li>
-            <li>
-              <a href="services.html"
-                >Events<i class="fas fa-chevron-down"></i>
-              </a>
-              <ul class="submenu">
-                <li><a href="services.html">Services</a></li>
-                <li><a href="services-single.html">Services Single</a></li>
-              </ul>
-              <!-- /.submenu -->
+        </nav>
+      </div>
+      <div id="sidenav" uk-offcanvas="overlay: true; flip: true">
+        <div class="uk-offcanvas-bar">
+          <button class="uk-offcanvas-close" type="button" uk-close></button>
+          <p class="uk-h5">44 SAO PAULO Lounge</p>
+          <ul>
+            <li class="uk-active uk-animation-toggle">
+              <a href="/" class="uk-animation-scale-up uk-display-block"
+                >Home</a
+              >
             </li>
-
-            <li><a href="contact.html">Contact Us</a></li>
+            <li class="uk-margin-small-top uk-animation-toggle">
+              <a href="/events/" class="uk-animation-scale-up uk-display-block"
+                >Events</a
+              >
+            </li>
+            <li class="uk-margin-small-top uk-animation-toggle">
+              <a
+                href="/reservations/"
+                class="uk-animation-scale-up uk-display-block"
+                >Reservations</a
+              >
+            </li>
+            <li class="uk-margin-small-top uk-animation-toggle">
+              <a
+                href="/about-us/"
+                class="uk-animation-scale-up uk-display-block"
+                >About Us</a
+              >
+            </li>
+            <li class="uk-margin-small-top uk-animation-toggle">
+              <a
+                href="/contact/"
+                class="uk-animation-scale-up uk-display-block"
+              >
+                Contact
+              </a>
+            </li>
           </ul>
+
+          <p>
+            Welcome to SAO PAULO Lounge, where vibrant nights and unforgettable
+            experiences come to life. Established in 2023, we have become a
+            staple in the heart of Abuja, offering a pulsating atmosphere for
+            those seeking the epitome of nightlife excitement.
+          </p>
         </div>
-      </nav>
+      </div>
+
       <div class="overlay"></div>
       <div class="text-overlay">
-        <h1>44 SAO PAULO Lounge</h1>
-        <a class="cta-btn reservation-btn"> Book A Reservation </a>
+        <h1 class="animate__animated animate__bounce text-white uk-text-center">
+          44 SAO PAULO Lounge
+        </h1>
+        <a class="uk-button uk-button-primary uk-button-large cta-btn"
+          >Book A Reservation</a
+        >
       </div>
       <img
         src="public/hero-image-1.webp"
@@ -60,17 +167,24 @@
       />
     </header>
     <section class="section-default about-us">
-      <p class="section-heading">Welcome To 44 SAO PAULO Lounge</p>
+      <p
+        class="section-heading animate__animated"
+        uk-scrollspy="cls: animate__rubberBand; repeat: false"
+      >
+        Welcome To 44 SAO PAULO Lounge
+      </p>
       <div class="content-wrapper">
-        <p class="content-text">
-          Nam vehicula commodo pulvinar. Morbi vel luctus dui. Maecenas faucibus
-          dignissim ante, et sollicitudin eros rutrum viverra. Sed viverra leo
-          eget aliquam ultricies. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Aliquam tempor dolor id odio luctus, a condimentum
-          dolor efficitur. Integer tincidunt diam urna, vitae dignissim tellus
-          imperdiet ut. Nunc nec porta magna.
+        <p
+          class="content-text"
+          uk-scrollspy="cls: uk-animation-slide-left; repeat: false"
+        >
+          Welcome to SAO PAULO Lounge, where vibrant nights and unforgettable
+          experiences come to life. Established in 2023, we have become a staple
+          in the heart of Abuja, offering a pulsating atmosphere for those
+          seeking the epitome of nightlife excitement.
         </p>
         <img
+          uk-scrollspy="cls: uk-animation-slide-right; repeat: false"
           src="public/about-image-1.webp"
           alt="Image of SP Lounge bar"
           class="content-image"
@@ -78,85 +192,151 @@
       </div>
     </section>
     <section class="section-default unique-selling-points overlay-section">
-      <p class="section-heading">Enjoy Yourself</p>
+      <p
+        class="section-heading animate__animated"
+        uk-scrollspy="cls: animate__rubberBand; repeat: false"
+      >
+        Enjoy Yourself
+      </p>
       <div class="section-overlay-content">
-        <div class="grid">
-          <div class="item">
-            <a href="#0" aria-labelledby="person1"></a>
-            <img src="public/menu-image-3.webp" alt="Image of SP Lounge" />
-            <div class="item__overlay">
-              <h3 id="person1" aria-hidden="true">Music</h3>
-              <div class="item__body">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
+        <div class="splide" aria-labelledby="carousel-heading">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="uk-card uk-card-default">
+                  <div class="uk-card-media-top">
+                    <img
+                      src="public/menu-image-3.webp"
+                      width="1800"
+                      height="1200"
+                      alt="An image of a live performance at 44 SAO PAULO Lounge"
+                    />
+                  </div>
+                  <div class="uk-card-body">
+                    <h3 class="uk-card-title">Live Performances</h3>
+                    <p>
+                      Immerse yourself in the pulsating beats and rhythms that
+                      fill the air. Our nightclub features a diverse range of
+                      music genres, from the latest hits to timeless classics,
+                      creating an electric atmosphere that keeps the dance floor
+                      alive all night long.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="uk-card uk-card-default">
+                  <div class="uk-card-media-top">
+                    <img
+                      src="public/menu-image-2.webp"
+                      width="1800"
+                      height="1200"
+                      alt="An image of the beautiful scenery at 44 SAO PAULO Lounge"
+                    />
+                  </div>
+                  <div class="uk-card-body">
+                    <h3 class="uk-card-title">VIP Lounge Experience</h3>
+                    <p>
+                      Elevate your night to a VIP level of luxury and
+                      exclusivity. Our VIP lounge offers a sophisticated retreat
+                      with exclusive seating, personalized bottle service, and a
+                      more intimate setting.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="uk-card uk-card-default">
+                  <div class="uk-card-media-top">
+                    <img
+                      src="public/menu-image-4.webp"
+                      width="1800"
+                      height="1200"
+                      alt="An image of people dancing at 44 SAO PAULO Lounge"
+                    />
+                  </div>
+                  <div class="uk-card-body">
+                    <h3 class="uk-card-title">Strippers</h3>
+                    <p>
+                      Experience the allure and excitement of live striptease
+                      performances that add a touch of seduction to your night.
+                      Our talented performers showcase their skills with
+                      elegance and style, creating an unforgettable and visually
+                      captivating entertainment experience.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="uk-card uk-card-default">
+                  <div class="uk-card-media-top">
+                    <img
+                      src="public/menu-image-5.webp"
+                      width="1800"
+                      height="1200"
+                      alt="An image of the games at 44 SAO PAULO Lounge"
+                    />
+                  </div>
+                  <div class="uk-card-body">
+                    <h3 class="uk-card-title">Interactive Games</h3>
+                    <p>
+                      Take entertainment to the next level with our selection of
+                      interactive games. Whether you're challenging friends to a
+                      game of billiards, testing your skills at arcade classics,
+                      or participating in themed gaming nights, there's no
+                      shortage of fun and friendly competition.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="uk-card uk-card-default">
+                  <div class="uk-card-media-top">
+                    <img
+                      src="public/menu-image-5.webp"
+                      width="1800"
+                      height="1200"
+                      alt="An image of the best food at 44 SAO PAULO Lounge"
+                    />
+                  </div>
+                  <div class="uk-card-body">
+                    <h3 class="uk-card-title">Gourmet Culinary Delights</h3>
+                    <p>
+                      Elevate your night out with a culinary journey that
+                      transcends the ordinary. Indulge in gourmet delights
+                      featuring a fusion of local and international cuisines.
+                      From tantalizing appetizers to exquisite main courses, our
+                      menu is crafted to satisfy every palate.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="uk-card uk-card-default">
+                  <div class="uk-card-media-top">
+                    <img
+                      src="public/hero-image-1.webp"
+                      width="1800"
+                      height="1200"
+                      alt="An image of drinks at 44 SAO PAULO Longe"
+                    />
+                  </div>
+                  <div class="uk-card-body">
+                    <h3 class="uk-card-title">Drinks</h3>
+                    <p>
+                      Raise your glass to an extensive selection of beverages
+                      that cater to every taste. Sip on expertly crafted
+                      cocktails, enjoy a wide array of spirits and wines, and
+                      experience the thrill of our mixologists creating
+                      signature drinks that define the essence of our nightlife.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
-          <div class="item">
-            <a href="#0" aria-labelledby="person1"></a>
-            <img
-              src="public/menu-image-2.webp"
-              alt="Image of the 24 hour bar at SAOP Lounge"
-            />
-            <div class="item__overlay">
-              <h3 id="person1" aria-hidden="true">24 hour bar</h3>
-              <div class="item__body">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <a href="#0" aria-labelledby="person2"></a>
-            <img
-              src="public/hero-image-1.webp"
-              alt="Image of food at SAOP Lounge"
-            />
-            <div class="item__overlay">
-              <h3 id="person2" aria-hidden="true">Foods and Drinks</h3>
-              <div class="item__body">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <a href="#0" aria-labelledby="person3"></a>
-            <img
-              src="public/menu-image-4.webp"
-              alt="Image of people dancing at SP Lounge"
-            />
-            <div class="item__overlay">
-              <h3 id="person3" aria-hidden="true">Stripper shows</h3>
-              <div class="item__body">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <a href="#0" aria-labelledby="person4"></a>
-            <img
-              src="public/menu-image-5.webp"
-              alt="Image of different games at SP Lounge"
-            />
-            <div class="item__overlay">
-              <h3 id="person4" aria-hidden="true">Different Games</h3>
-              <div class="item__body">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
+          <div class="my-carousel-progress">
+            <div class="my-carousel-progress-bar"></div>
           </div>
         </div>
       </div>
@@ -167,196 +347,106 @@
         class="section-overlay-image"
       />
     </section>
+    <section class="section-default uk-background-muted">
+      <p class="section-heading">Book A Table</p>
+      <form class="uk-grid-small" uk-grid>
+        <div class="uk-width-1-4@s">
+          <span
+            class="uk-form-icon uk-form-icon-flip"
+            uk-icon="icon: lock"
+          ></span>
+          <select class="uk-select" aria-label="Select">
+            <option value="1">1 Person</option>
+            <option value="2">2 People</option>
+            <option value="3">3 People</option>
+            <option value="4">4 People</option>
+            <option value="5">5 People</option>
+            <option value="6">6 People</option>
+            <option value="7">7 People</option>
+            <option value="8">8 People</option>
+            <option value="9">9 People</option>
+            <option value="10">10 People</option>
+          </select>
+        </div>
+        <div class="uk-width-1-4@s">
+          <input class="uk-input" type="date" placeholder="date" />
+        </div>
 
+        <div class="uk-width-1-4@s">
+          <input class="uk-input" type="time" placeholder="time" />
+        </div>
+        <div class="uk-width-1-4@s">
+          <button class="submit-btn uk-button uk-button-primary">
+            Book A Table
+          </button>
+        </div>
+      </form>
+    </section>
     <section class="section-default menu">
-      <p class="section-heading">Our Menu</p>
-
-      <ul class="tabs">
-        <li data-tab-target="#food" class="active tab">
-          <img
-            class="tab-img"
-            src="public/kitchen-utensils.png"
-            alt="Icon of cooking utensils"
-          />
-          Food
-        </li>
-        <li data-tab-target="#drinks" class="tab">
-          <img
-            class="tab-img"
-            src="public/cheers.png"
-            alt="Icon of drinks"
-          />Drinks
-        </li>
-        <li data-tab-target="#games" class="tab">
-          <img
-            class="tab-img"
-            src="public/poker-game.png"
-            alt="Icon of games"
-          />Games
-        </li>
-      </ul>
-
-      <div class="tab-content">
-        <div id="food" data-tab-content class="active">
-          <div class="content-wrapper">
-            <div class="content">
-              <img
-                class="content-image"
-                src="public/menu-image-6.webp"
-                alt="Image of food in 44 SAOP Lounge"
-              />
-              <div class="content-data">
-                <p class="content-name">Jollof Fiesta Platter</p>
-                <p class="content-desc">
-                  A generous combination of flavorful jollof rice, succulent
-                  grilled chicken, and spicy plantains.
-                </p>
+      <p
+        class="section-heading animate__animated"
+        uk-scrollspy="cls: animate__rubberBand; repeat: false"
+      >
+        Our Menu
+      </p>
+      <div class="uk-margin-medium-top">
+        <ul class="uk-flex-center" uk-tab>
+          <li class="uk-active"><a href="#">Food</a></li>
+          <li><a href="#">Drinks</a></li>
+          <li><a href="#">Games</a></li>
+        </ul>
+        <ul id="menu-tab" class="uk-switcher uk-margin">
+          <li>
+            <div
+              class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+              uk-grid
+            >
+              <div class="uk-card-media-left uk-cover-container">
+                <img src="public/menu-image-4.webp" alt="" uk-cover />
+                <canvas width="600" height="400"></canvas>
               </div>
-              <div class="price">
-                <p class="price-heading">Price</p>
-                <p class="price-content">₦2500</p>
+              <div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">Media Left</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt.
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="content">
-              <img
-                class="content-image"
-                src="public/menu-image-7.webp"
-                alt="Image of food in 44 SAOP Lounge"
-              />
-              <div class="content-data">
-                <p class="content-name">Puff Puff Delight Skewers</p>
-                <p class="content-desc">
-                  Irresistible puff puff balls threaded onto skewers, served
-                  with a sweet and spicy dipping sauce.
-                </p>
+          </li>
+          <li>
+            <div
+              class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+              uk-grid
+            >
+              <div class="uk-card-media-left uk-cover-container">
+                <img src="images/light.jpg" alt="" uk-cover />
+                <canvas width="600" height="400"></canvas>
               </div>
-              <div class="price">
-                <p class="price-heading">Price</p>
-                <p class="price-content">₦1,200</p>
-              </div>
-            </div>
-            <div class="content">
-              <img
-                class="content-image"
-                src="public/menu-image-8.webp"
-                alt="Image of food in 44 SAOP Lounge"
-              />
-              <div class="content-data">
-                <p class="content-name">Suya Explosion Nachos</p>
-                <p class="content-desc">
-                  Crispy nachos topped with a savory blend of suya-spiced beef,
-                  diced tomatoes, and melted cheese.
-                </p>
-              </div>
-              <div class="price">
-                <p class="price-heading">Price</p>
-                <p class="price-content">₦1,800</p>
+              <div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">Media Left</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt.
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="content">
-              <img
-                class="content-image"
-                src="public/menu-image-9.webp"
-                alt="Image of food in 44 SAOP Lounge"
-              />
-              <div class="content-data">
-                <p class="content-name">Egusi Eruption Pizza</p>
-                <p class="content-desc">
-                  A unique pizza creation featuring a rich egusi sauce, assorted
-                  meats, and vibrant vegetables.
-                </p>
-              </div>
-              <div class="price">
-                <p class="price-heading">Price</p>
-                <p class="price-content">₦2,200</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="drinks" data-tab-content>
-          <div class="content-wrapper">
-            <div class="content">
-              <img
-                class="content-image"
-                src="public/hero-image-1.webp"
-                alt="Image of food in 44 SAOP Lounge"
-              />
-              <div class="content-data">
-                <p class="content-name">Jollof Fries</p>
-                <p class="content-desc">
-                  Crispy fries tossed in a flavorful Jollof seasoning, served
-                  with a spicy dipping sauce.
-                </p>
-              </div>
-              <div class="price">
-                <p class="price-heading">Price</p>
-                <p class="price-content">₦800</p>
-              </div>
-            </div>
-            <div class="content">
-              <img
-                class="content-image"
-                src="public/hero-image-1.webp"
-                alt="Image of food in 44 SAOP Lounge"
-              />
-              <div class="content-data">
-                <p class="content-name">Jollof Fries</p>
-                <p class="content-desc">
-                  Crispy fries tossed in a flavorful Jollof seasoning, served
-                  with a spicy dipping sauce.
-                </p>
-              </div>
-              <div class="price">
-                <p class="price-heading">Price</p>
-                <p class="price-content">₦800</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="games" data-tab-content>
-          <div class="content-wrapper">
-            <div class="content">
-              <img
-                class="content-image"
-                src="public/hero-image-1.webp"
-                alt="Image of food in 44 SAOP Lounge"
-              />
-              <div class="content-data">
-                <p class="content-name">Jollof Fries</p>
-                <p class="content-desc">
-                  Crispy fries tossed in a flavorful Jollof seasoning, served
-                  with a spicy dipping sauce.
-                </p>
-              </div>
-              <div class="price">
-                <p class="price-heading">Price</p>
-                <p class="price-content">₦800</p>
-              </div>
-            </div>
-            <div class="content">
-              <img
-                class="content-image"
-                src="public/hero-image-1.webp"
-                alt="Image of food in 44 SAOP Lounge"
-              />
-              <div class="content-data">
-                <p class="content-name">Suya Sliders</p>
-                <p class="content-desc">
-                  Crispy fries tossed in a flavorful Jollof seasoning, served
-                  with a spicy dipping sauce.
-                </p>
-              </div>
-              <div class="price">
-                <p class="price-heading">Price</p>
-                <p class="price-content">₦1,200</p>
-              </div>
-            </div>
-          </div>
-        </div>
+          </li>
+          <li>Content 3</li>
+        </ul>
       </div>
     </section>
     <section class="section-default overlay-section events">
-      <p class="section-heading">Events In SAOP Lounge</p>
+      <p
+        class="section-heading animate__animated"
+        uk-scrollspy="cls: animate__rubberBand; repeat: false"
+      >
+        Events In SAO PAULO Lounge
+      </p>
       <img
         src="public/hero-image-1.webp"
         alt="Image of an event in SAOP Lounge"
@@ -364,21 +454,162 @@
       />
       <div class="section-overlay"></div>
       <div class="section-overlay-content">
-        <div class="event-wrapper">
-          <div class="event">
-            <div class="event-content">
-              <p class="event-name">Wednesday Ladies Night</p>
-              <p class="event-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-                eos?
-              </p>
-              <p class="event-date">02:00am Tuesday - 01:00pm Thursday</p>
+        <div class="section-overlay-content">
+          <div class="splide event-splide" aria-labelledby="carousel-heading">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div
+                    class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+                    uk-grid
+                  >
+                    <div
+                      class="uk-flex-last@s uk-card-media-right uk-cover-container"
+                    >
+                      <img
+                        src="public/menu-image-3.webp"
+                        alt="Image of Wednesday Ladies Night at SAO PAULO Lounge"
+                        uk-cover
+                      />
+                      <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div>
+                      <div class="uk-card-body">
+                        <h3 class="uk-card-title">Wednesday Ladies Night</h3>
+                        <p>
+                          Embrace the midweek excitement with our Wednesday
+                          Ladies Night! It's a celebration dedicated to the
+                          fabulous women who bring life and energy to the dance
+                          floor. Enjoy special discounts on drinks, vibrant
+                          music mixes, and an atmosphere filled with camaraderie
+                          and laughter. Whether you're hanging out with friends
+                          or hitting the dance floor solo, Wednesday Ladies
+                          Night is the perfect midweek escape.
+                        </p>
+                      </div>
+                      <div class="uk-card-footer">
+                        <a href="/events/" class="uk-button uk-button-text"
+                          >Read more</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div
+                    class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+                    uk-grid
+                  >
+                    <div
+                      class="uk-flex-last@s uk-card-media-right uk-cover-container"
+                    >
+                      <img
+                        src="public/menu-image-6.webp"
+                        alt="Image of Friday All-Night Dance at SAO PAULO Lounge"
+                        uk-cover
+                      />
+                      <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div>
+                      <div class="uk-card-body">
+                        <h3 class="uk-card-title">Friday All-Night Dance</h3>
+                        <p>
+                          Kick off your weekend in style at our Friday All-Night
+                          Dance! The beats are non-stop, and the energy is
+                          contagious as our DJs spin the latest tracks and
+                          timeless classics. Whether you're a seasoned dancer or
+                          just looking to let loose, Friday All-Night Dance is
+                          the ultimate party destination. The lights, the music,
+                          and the electric atmosphere will keep you grooving
+                          until the early hours of Saturday.
+                        </p>
+                      </div>
+                      <div class="uk-card-footer">
+                        <a href="/events/" class="uk-button uk-button-text"
+                          >Read more</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div
+                    class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+                    uk-grid
+                  >
+                    <div
+                      class="uk-flex-last@s uk-card-media-right uk-cover-container"
+                    >
+                      <img
+                        src="public/menu-image-6.webp"
+                        alt="Image of Sunday Karaoke Night at SAO PAULO Lounge"
+                        uk-cover
+                      />
+                      <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div>
+                      <div class="uk-card-body">
+                        <h3 class="uk-card-title">Sunday Karaoke Night</h3>
+                        <p>
+                          Cap off your weekend with a dose of fun and laughter
+                          at our Sunday Karaoke Night. Whether you're a singing
+                          sensation or just love cheering on your friends, our
+                          karaoke night is the perfect way to unwind. Choose
+                          from an extensive song list, grab the microphone, and
+                          let your inner rockstar shine. Sunday Karaoke Night is
+                          all about good tunes, great company, and creating
+                          memorable moments to carry you into the new week.
+                        </p>
+                      </div>
+                      <div class="uk-card-footer">
+                        <a href="/events/" class="uk-button uk-button-text"
+                          >Read more</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div
+                    class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+                    uk-grid
+                  >
+                    <div
+                      class="uk-flex-last@s uk-card-media-right uk-cover-container"
+                    >
+                      <img
+                        src="public/menu-image-6.webp"
+                        alt="Image of Saturday Birthday Parties at SAO PAULO Lounge"
+                        uk-cover
+                      />
+                      <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div>
+                      <div class="uk-card-body">
+                        <h3 class="uk-card-title">Saturday Birthday Parties</h3>
+                        <p>
+                          Make your birthday a night to remember with our
+                          Saturday Birthday Parties! Gather your friends,
+                          reserve a VIP section, and let the celebrations begin.
+                          Our nightclub is the perfect venue for an
+                          unforgettable birthday bash. Enjoy personalized
+                          service, exclusive amenities, and the freedom to dance
+                          the night away surrounded by the people who matter
+                          most. Cheers to another year of memories!
+                        </p>
+                      </div>
+                      <div class="uk-card-footer">
+                        <a href="/events/" class="uk-button uk-button-text"
+                          >Read more</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <div class="event-countdown">
-              <div id="days" class="countdown-box"></div>
-              <div id="hours" class="countdown-box"></div>
-              <div id="minutes" class="countdown-box"></div>
-              <div id="seconds" class="countdown-box"></div>
+            <div class="my-carousel-progress">
+              <div class="my-carousel-progress-bar"></div>
             </div>
           </div>
         </div>
@@ -393,13 +624,15 @@
             <h4>company</h4>
             <ul>
               <li><a href="#">about us</a></li>
-              <li><a href="#">our services</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Reservations</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4>get help</h4>
             <ul>
               <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact</a></li>
             </ul>
           </div>
 
@@ -409,7 +642,6 @@
               <a href="#"><i class="fab fa-facebook-f"></i></a>
               <a href="#"><i class="fab fa-twitter"></i></a>
               <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
           </div>
         </div>
