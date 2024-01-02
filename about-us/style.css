@@ -26,6 +26,7 @@ a {
 
 a:hover {
   cursor: pointer;
+  text-decoration: none;
 }
 
 header {
@@ -102,7 +103,6 @@ section.about-us .content-wrapper .content-text {
 
 section.about-us .content-wrapper .content-image {
   object-fit: cover;
-  border-radius: 5px;
 }
 
 footer ul {
