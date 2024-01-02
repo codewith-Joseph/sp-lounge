@@ -66,6 +66,12 @@ img {
 header {
   height: 100vh;
   width: 100%;
+  position: relative;
+
+  background-image: url(./public/hero-image-2.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 .overlay-image {
