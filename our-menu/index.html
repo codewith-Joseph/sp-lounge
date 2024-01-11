@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Menu At The Best Bar In Abuja - SAO PAULO Lounge</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css"
+    />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <meta
+      name="description"
+      content="Our Menu at the most vibrant nightlife, 44 SAOP Lounge Garki. We offer drinks and wines at our 24 hour bar.
+    Indulge yourself in our stripper shows, different games, our 44 plater that contains assorted meats and seafood. Join our special nights, we feature Wednesday Ladies Night, Friday All-Night Dance, Saturday Birthday Parties, and Sunday Karaoke Night."
+    />
+  </head>
+  <body>
+    <header>
+      <div
+        uk-sticky="start: 170; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; offset: 0"
+      >
+        <nav class="uk-navbar-container">
+          <div class="uk-container uk-container-expand">
+            <div uk-navbar>
+              <div class="uk-navbar-left">
+                <a
+                  href="/
+          "
+                  class="logo"
+                  >44 SAO PAULO Lounge</a
+                >
+              </div>
+              <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav uk-visible@s">
+                  <li><a href="/">Home</a></li>
+                  <li>
+                    <a href="/about-us/">About Us</a>
+                  </li>
+                  <li>
+                    <a href="/events/">Events</a>
+                  </li>
+                  <li>
+                    <a href="/reservations/">Reservations</a>
+                  </li>
+
+                  <li>
+                    <a href="/contact/"> Contact </a>
+                  </li>
+                </ul>
+                <a
+                  href="#"
+                  class="uk-navbar-toggle uk-hidden@s"
+                  uk-navbar-toggle-icon
+                  uk-toggle="target: #sidenav"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div id="sidenav" uk-offcanvas="overlay: true; flip: true">
+        <div class="uk-offcanvas-bar">
+          <button class="uk-offcanvas-close" type="button" uk-close></button>
+          <p class="uk-h5 uk-text-muted">44 SAO PAULO Lounge</p>
+          <ul class="offcanvas-links">
+            <li class="uk-active">
+              <a href="/" class="uk-display-block">Home</a>
+            </li>
+            <li class="uk-margin-small-top uk-animation-toggle">
+              <a href="/about-us/" class="uk-display-block">About Us</a>
+            </li>
+            <li class="uk-margin-small-top uk-animation-toggle">
+              <a href="/events/" class="uk-display-block">Events</a>
+            </li>
+            <li class="uk-margin-small-top uk-animation-toggle">
+              <a href="/reservations/" class="uk-display-block">Reservations</a>
+            </li>
+            <li class="uk-margin-small-top uk-animation-toggle">
+              <a href="/reservations/" class="uk-display-block">Our Menu</a>
+            </li>
+
+            <li class="uk-margin-small-top uk-animation-toggle">
+              <a href="/contact/" class="uk-display-block"> Contact </a>
+            </li>
+          </ul>
+          <p>
+            Welcome to SAO PAULO Lounge, where vibrant nights and unforgettable
+            experiences come to life. Established in 2023, we have become a
+            staple in the heart of Abuja, offering a pulsating atmosphere for
+            those seeking the epitome of nightlife excitement.
+          </p>
+        </div>
+      </div>
+
+      <div class="overlay"></div>
+      <div class="text-overlay">
+        <p class="uk-text-large uk-text-bolder uk-text-uppercase">Our Menu</p>
+        <ul class="uk-breadcrumb">
+          <li><a href="/">Home</a></li>
+          <li><a href="/our-menu/">Our Menu</a></li>
+        </ul>
+      </div>
+      <img
+        src="../public/hero-image-4.webp"
+        alt="A nice looking restaurant and bar"
+        class="overlay-image"
+      />
+    </header>
+    <section class="section-default menu">
+      <p
+        class="section-heading animate__animated"
+        uk-scrollspy="cls: animate__rubberBand; repeat: false"
+      >
+        Our Menu
+      </p>
+      <div class="uk-margin-medium-top">
+        <ul class="uk-flex-center" uk-tab>
+          <li class="uk-active"><a href="#">Specials</a></li>
+          <li><a href="#">Drinks</a></li>
+          <li><a href="#">Starters</a></li>
+        </ul>
+        <ul id="menu-tab" class="uk-switcher uk-margin">
+          <li>
+            <div
+              class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+              uk-grid
+            >
+              <div class="uk-card-media-left uk-cover-container">
+                <img
+                  loading="lazy"
+                  src="../public/chow-mein.webp"
+                  alt="An image of chow mein"
+                  uk-cover
+                />
+                <canvas width="600" height="400"></canvas>
+              </div>
+              <div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">Chow Mein</h3>
+                  <p>
+                    Embark on a savory journey with our delectable Chow Mein, a
+                    Chinese culinary masterpiece that tantalizes the taste buds
+                    with every bite. Imagine a symphony of perfectly stir-fried
+                    noodles, crisp and golden, harmonizing with a medley of
+                    fresh and colorful vegetables.
+                  </p>
+                </div>
+                <div class="uk-card-footer">
+                  <a href="/contact/" class="uk-button uk-button-text"
+                    >Order Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+              uk-grid
+            >
+              <div class="uk-card-media-left uk-cover-container">
+                <img
+                  loading="lazy"
+                  src="../public/rice-seafood.webp"
+                  alt="An image of stir fly with shredded beef"
+                  uk-cover
+                />
+                <canvas width="600" height="400"></canvas>
+              </div>
+              <div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">Chin Rice With Seafood</h3>
+                  <p>
+                    Embark on a culinary journey that marries the aromatic
+                    richness of Chin rice with the bounty of the sea in our
+                    exquisite Chin Rice with Seafood. Imagine fragrant Chin
+                    rice, perfectly steamed and infused with the subtle nuances
+                    of Asian spices, providing the perfect canvas for a symphony
+                    of seafood flavors.
+                  </p>
+                </div>
+                <div class="uk-card-footer">
+                  <a href="/contact/" class="uk-button uk-button-text"
+                    >Order Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+              uk-grid
+            >
+              <div class="uk-card-media-left uk-cover-container">
+                <img
+                  loading="lazy"
+                  src="../public/paella-rice-with-seafood.webp"
+                  alt="An image of paella rice with seafood"
+                  uk-cover
+                />
+                <canvas width="600" height="400"></canvas>
+              </div>
+              <div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">Paella Rice With Seafood</h3>
+                  <p>
+                    Transport your taste buds to the sun-drenched shores of
+                    Spain with our tantalizing Paella Rice with Seafood.
+                    Envision a paella pan brimming with saffron-infused rice,
+                    creating a golden canvas that cradles an exquisite selection
+                    of fresh seafood. Plump shrimp, tender calamari, and briny
+                    mussels mingle harmoniously, each bite promising a taste of
+                    the Mediterranean.
+                  </p>
+                </div>
+                <div class="uk-card-footer">
+                  <a href="/contact/" class="uk-button uk-button-text"
+                    >Order Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+              uk-grid
+            >
+              <div class="uk-card-media-left uk-cover-container">
+                <img
+                  loading="lazy"
+                  src="../public/stir-fly-spaghetti-with-shredded-beef.webp"
+                  alt="An image of stir fly with shredded beef"
+                  uk-cover
+                />
+                <canvas width="600" height="400"></canvas>
+              </div>
+              <div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">Stir fly with shredded beef</h3>
+                  <p>
+                    Indulge your senses in a culinary journey that seamlessly
+                    blends East and West with our Stir-Fried Spaghetti with
+                    Shredded Beef. Picture perfectly al dente spaghetti,
+                    elegantly entwined with tender, savory shreds of beef, each
+                    strand glistening with a symphony of flavors.
+                  </p>
+                </div>
+                <div class="uk-card-footer">
+                  <a href="/contact/" class="uk-button uk-button-text"
+                    >Order Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+              uk-grid
+            >
+              <div class="uk-card-media-left uk-cover-container">
+                <img
+                  loading="lazy"
+                  src="../public/penne-arrabbiata.webp"
+                  alt="An image of stir fly with shredded beef"
+                  uk-cover
+                />
+                <canvas width="600" height="400"></canvas>
+              </div>
+              <div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">Penne Arrabiata</h3>
+                  <p>
+                    Delight your taste buds with our Penne Arrabiata, a dish
+                    that brings the vibrant essence of Italy to your plate.
+                    Imagine perfectly cooked penne pasta, al dente and ready to
+                    embrace the bold flavors of a zesty arrabiata sauce. Each
+                    bite is a harmonious dance of textures and tastes, as the
+                    pasta cradles the robust sauce infused with the warmth of
+                    ripe tomatoes, garlic, and red chili peppers.
+                  </p>
+                </div>
+                <div class="uk-card-footer">
+                  <a href="/contact/" class="uk-button uk-button-text"
+                    >Order Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+              uk-grid
+            >
+              <div class="uk-card-media-left uk-cover-container">
+                <img
+                  loading="lazy"
+                  src="../public/rich-spaghetti-bolognese.webp"
+                  alt="An image of stir fly with shredded beef"
+                  uk-cover
+                />
+                <canvas width="600" height="400"></canvas>
+              </div>
+              <div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">Spaghetti Bolognese</h3>
+                  <p>
+                    Dive into the heart of Italy with our Spaghetti Bolognese, a
+                    timeless dish that marries the richness of a hearty meat
+                    sauce with perfectly cooked spaghetti. Picture al dente
+                    pasta, skillfully twirled around the fork, generously coated
+                    in a robust Bolognese sauce that simmers to perfection.
+                  </p>
+                </div>
+                <div class="uk-card-footer">
+                  <a href="/contact/" class="uk-button uk-button-text"
+                    >Order Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div
+              class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+              uk-grid
+            >
+              <div class="uk-card-media-left uk-cover-container">
+                <img
+                  loading="lazy"
+                  src="../public/hennessey-xo.webp"
+                  alt="An image of Hennessey XO"
+                  uk-cover
+                />
+                <canvas width="600" height="400"></canvas>
+              </div>
+              <div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">Hennessey XO</h3>
+                  <p>
+                    Indulge in the refined world of luxury with Hennessy XO, a
+                    masterpiece in the realm of cognac. This Extra Old
+                    expression is a celebration of time, craftsmanship, and the
+                    artistry of blending that Hennessy has perfected over
+                    centuries.
+                  </p>
+                </div>
+                <div class="uk-card-footer">
+                  <a href="/contact/" class="uk-button uk-button-text"
+                    >Order Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+              uk-grid
+            >
+              <div class="uk-card-media-left uk-cover-container">
+                <img
+                  loading="lazy"
+                  src="public/clicquot.webp"
+                  alt="An image of a Clicquot"
+                  uk-cover
+                />
+                <canvas width="600" height="400"></canvas>
+              </div>
+              <div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">Clicquot</h3>
+                  <p>
+                    Veuve Clicquot Yellow Label: Effervescent Elegance in Every
+                    Bubble Step into a world of effervescent luxury with Veuve
+                    Clicquot Yellow Label, a Champagne that epitomizes the art
+                    of celebration. From the moment the golden elixir is poured
+                    into your glass, you're embraced by a vivacious dance of
+                    bubbles that ascend like tiny effervescent notes, setting
+                    the stage for an extraordinary experience.
+                  </p>
+                </div>
+                <div class="uk-card-footer">
+                  <a href="/contact/" class="uk-button uk-button-text"
+                    >Order Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div
+              class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+              uk-grid
+            >
+              <div class="uk-card-media-left uk-cover-container">
+                <img
+                  loading="lazy"
+                  src="public/spicy-chicken-wings-with-french-fries.webp"
+                  alt="An image of spicy chicken wings with french fries"
+                  uk-cover
+                />
+                <canvas width="600" height="400"></canvas>
+              </div>
+              <div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">
+                    Spicy Chicken Wings With French Fries
+                  </h3>
+                  <p>
+                    Immerse yourself in a tantalizing feast of bold flavors with
+                    our Spicy Chicken Wings paired perfectly with golden French
+                    Fries. Picture succulent chicken wings, expertly coated in a
+                    fiery blend of spices, creating a tantalizing dance of heat
+                    and savory goodness. Each bite promises a harmonious balance
+                    — crispy on the outside, tender on the inside, and infused
+                    with the irresistible kick of our signature spicy marinade.
+                  </p>
+                </div>
+                <div class="uk-card-footer">
+                  <a href="/contact/" class="uk-button uk-button-text"
+                    >Order Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+              uk-grid
+            >
+              <div class="uk-card-media-left uk-cover-container">
+                <img
+                  loading="lazy"
+                  src="public/turkey-wings-with-french-fries.webp"
+                  alt="An image of spicy chicken wings with french fries"
+                  uk-cover
+                />
+                <canvas width="600" height="400"></canvas>
+              </div>
+              <div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">Turkey Wings with French Fries</h3>
+                  <p>
+                    Experience a delicious twist on tradition with our Turkey
+                    Wings paired with golden French Fries — a feast that
+                    transports you beyond the confines of the Thanksgiving
+                    table. Imagine succulent turkey wings, roasted to
+                    perfection, with each bite revealing a tender interior and a
+                    golden, crisped skin that promises a savory journey in every
+                    mouthful.
+                  </p>
+                </div>
+                <div class="uk-card-footer">
+                  <a href="/contact/" class="uk-button uk-button-text"
+                    >Order Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="/about-us/">about us</a></li>
+              <li><a href="/events/">Events</a></li>
+              <li><a href="/reservations/">Reservations</a></li>
+              <li><a href="/our-menu/">Our Menu</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="/contact/">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

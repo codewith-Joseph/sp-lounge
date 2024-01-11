@@ -29,9 +29,18 @@ a:hover {
   text-decoration: none;
 }
 
+.offcanvas-links a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.offcanvas-links a {
+  color: #bbbbbb;
+}
+
 header {
   position: relative;
-  height: 100vh;
+  height: 500px;
   width: 100%;
 }
 

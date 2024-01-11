@@ -50,18 +50,6 @@
                   </li>
                   <li>
                     <a href="/events/">Events</a>
-                    <div class="uk-navbar-dropdown">
-                      <ul class="uk-nav uk-navbar-dropdown-nav">
-                        <li>
-                          <a href="/events/ladies-night/"> Ladies Night</a>
-                        </li>
-                        <li>
-                          <a href="/events/birthday-parties/">
-                            Birthday Parties</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
                   </li>
                   <li class="uk-active">
                     <a href="/reservations/">Reservations</a>
@@ -85,38 +73,24 @@
         <div class="uk-offcanvas-bar">
           <button class="uk-offcanvas-close" type="button" uk-close></button>
           <p class="uk-h5 uk-text-muted">44 SAO PAULO Lounge</p>
-          <ul>
-            <li class="uk-active uk-animation-toggle">
-              <a href="/" class="uk-animation-scale-up uk-display-block"
-                >Home</a
-              >
+          <ul class="offcanvas-links">
+            <li class="uk-active">
+              <a href="/" class="uk-display-block">Home</a>
             </li>
             <li class="uk-margin-small-top uk-animation-toggle">
-              <a href="/events/" class="uk-animation-scale-up uk-display-block"
-                >Events</a
-              >
+              <a href="/events/" class="uk-display-block">Events</a>
             </li>
             <li class="uk-margin-small-top uk-animation-toggle">
-              <a
-                href="/reservations/"
-                class="uk-animation-scale-up uk-display-block"
-                >Reservations</a
-              >
+              <a href="/reservations/" class="uk-display-block">Reservations</a>
             </li>
             <li class="uk-margin-small-top uk-animation-toggle">
-              <a
-                href="/about-us/"
-                class="uk-animation-scale-up uk-display-block"
-                >About Us</a
-              >
+              <a href="/reservations/" class="uk-display-block">Our Menu</a>
             </li>
             <li class="uk-margin-small-top uk-animation-toggle">
-              <a
-                href="/contact/"
-                class="uk-animation-scale-up uk-display-block"
-              >
-                Contact
-              </a>
+              <a href="/about-us/" class="uk-display-block">About Us</a>
+            </li>
+            <li class="uk-margin-small-top uk-animation-toggle">
+              <a href="/contact/" class="uk-display-block"> Contact </a>
             </li>
           </ul>
 
@@ -140,7 +114,7 @@
         </ul>
       </div>
       <img
-        src="../public/hero-image-1.webp"
+        src="../public/hero-image-6.webp"
         alt="A nice looking restaurant and bar"
         class="overlay-image"
       />
@@ -149,10 +123,6 @@
       <p class="section-heading">Book A Table</p>
       <form class="uk-grid-small" uk-grid>
         <div class="uk-width-1-4@s">
-          <span
-            class="uk-form-icon uk-form-icon-flip"
-            uk-icon="icon: lock"
-          ></span>
           <select class="uk-select" aria-label="Select">
             <option value="1">1 Person</option>
             <option value="2">2 People</option>
@@ -186,14 +156,17 @@
           <div class="footer-col">
             <h4>company</h4>
             <ul>
-              <li><a href="#">about us</a></li>
-              <li><a href="#">our services</a></li>
+              <li><a href="/about-us/">about us</a></li>
+              <li><a href="/events/">Events</a></li>
+              <li><a href="/reservations/">Reservations</a></li>
+              <li><a href="/our-menu/">Our Menu</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4>get help</h4>
             <ul>
               <li><a href="#">FAQ</a></li>
+              <li><a href="/contact/">Contact</a></li>
             </ul>
           </div>
 

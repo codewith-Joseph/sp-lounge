@@ -46,6 +46,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     Indulge yourself in our stripper shows, different games, our 44 plater that contains assorted meats and seafood. Join our special nights, we feature Wednesday Ladies Night, Friday All-Night Dance, Saturday Birthday Parties, and Sunday Karaoke Night. 
     "
     />
+
+    <link rel="preload" as="image" href="./public/hero-image-5.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
@@ -67,27 +69,17 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav uk-visible@s">
                   <li class="uk-active"><a href="/">Home</a></li>
+
+                  <li>
+                    <a href="/about-us/">About Us</a>
+                  </li>
                   <li>
                     <a href="/events/">Events</a>
-                    <div class="uk-navbar-dropdown">
-                      <ul class="uk-nav uk-navbar-dropdown-nav">
-                        <li>
-                          <a href="/events/ladies-night"> Ladies Night</a>
-                        </li>
-                        <li>
-                          <a href="/events/birthday-parties/">
-                            Birthday Parties</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
                   </li>
                   <li>
                     <a href="/reservations/">Reservations</a>
                   </li>
-                  <li>
-                    <a href="/about-us/">About Us</a>
-                  </li>
+
                   <li>
                     <a href="/contact/"> Contact </a>
                   </li>
@@ -107,38 +99,24 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         <div class="uk-offcanvas-bar">
           <button class="uk-offcanvas-close" type="button" uk-close></button>
           <p class="uk-h5 uk-text-muted">44 SAO PAULO Lounge</p>
-          <ul>
-            <li class="uk-active uk-animation-toggle">
-              <a href="/" class="uk-animation-scale-up uk-display-block"
-                >Home</a
-              >
+          <ul class="offcanvas-links">
+            <li class="uk-active">
+              <a href="/" class="uk-display-block">Home</a>
             </li>
             <li class="uk-margin-small-top uk-animation-toggle">
-              <a href="/events/" class="uk-animation-scale-up uk-display-block"
-                >Events</a
-              >
+              <a href="/events/" class="uk-display-block">Events</a>
             </li>
             <li class="uk-margin-small-top uk-animation-toggle">
-              <a
-                href="/reservations/"
-                class="uk-animation-scale-up uk-display-block"
-                >Reservations</a
-              >
+              <a href="/reservations/" class="uk-display-block">Reservations</a>
             </li>
             <li class="uk-margin-small-top uk-animation-toggle">
-              <a
-                href="/about-us/"
-                class="uk-animation-scale-up uk-display-block"
-                >About Us</a
-              >
+              <a href="/reservations/" class="uk-display-block">Our Menu</a>
             </li>
             <li class="uk-margin-small-top uk-animation-toggle">
-              <a
-                href="/contact/"
-                class="uk-animation-scale-up uk-display-block"
-              >
-                Contact
-              </a>
+              <a href="/about-us/" class="uk-display-block">About Us</a>
+            </li>
+            <li class="uk-margin-small-top uk-animation-toggle">
+              <a href="/contact/" class="uk-display-block"> Contact </a>
             </li>
           </ul>
 
@@ -180,9 +158,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </p>
         <img
           uk-scrollspy="cls: uk-animation-slide-right; repeat: false"
-          src="public/about-image-1.webp"
+          src="public/hero-image-4.webp"
           alt="Image of SP Lounge bar"
           class="content-image"
+          loading="lazy"
         />
       </div>
     </section>
@@ -204,6 +183,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       src="public/menu-image-3.webp"
                       width="1800"
                       height="1200"
+                      loading="lazy"
                       alt="An image of a live performance at 44 SAO PAULO Lounge"
                     />
                   </div>
@@ -227,6 +207,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       width="1800"
                       height="1200"
                       alt="An image of the beautiful scenery at 44 SAO PAULO Lounge"
+                      loading="lazy"
                     />
                   </div>
                   <div class="uk-card-body">
@@ -248,6 +229,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       width="1800"
                       height="1200"
                       alt="An image of people dancing at 44 SAO PAULO Lounge"
+                      loading="lazy"
                     />
                   </div>
                   <div class="uk-card-body">
@@ -270,6 +252,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       width="1800"
                       height="1200"
                       alt="An image of the games at 44 SAO PAULO Lounge"
+                      loading="lazy"
                     />
                   </div>
                   <div class="uk-card-body">
@@ -292,6 +275,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       width="1800"
                       height="1200"
                       alt="An image of the best food at 44 SAO PAULO Lounge"
+                      loading="lazy"
                     />
                   </div>
                   <div class="uk-card-body">
@@ -314,6 +298,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       width="1800"
                       height="1200"
                       alt="An image of drinks at 44 SAO PAULO Longe"
+                      loading="lazy"
                     />
                   </div>
                   <div class="uk-card-body">
@@ -341,10 +326,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       <p class="section-heading">Book A Table</p>
       <form class="uk-grid-small" uk-grid>
         <div class="uk-width-1-4@s">
-          <span
-            class="uk-form-icon uk-form-icon-flip"
-            uk-icon="icon: lock"
-          ></span>
           <select class="uk-select" aria-label="Select">
             <option value="1">1 Person</option>
             <option value="2">2 People</option>
@@ -393,6 +374,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             >
               <div class="uk-card-media-left uk-cover-container">
                 <img
+                  loading="lazy"
                   src="public/chow-mein.webp"
                   alt="An image of chow mein"
                   uk-cover
@@ -423,6 +405,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             >
               <div class="uk-card-media-left uk-cover-container">
                 <img
+                  loading="lazy"
                   src="public/stir-fly-spaghetti-with-shredded-beef.webp"
                   alt="An image of stir fly with shredded beef"
                   uk-cover
@@ -456,6 +439,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             >
               <div class="uk-card-media-left uk-cover-container">
                 <img
+                  loading="lazy"
                   src="public/hennessey-xo.webp"
                   alt="An image of Hennessey XO"
                   uk-cover
@@ -486,6 +470,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             >
               <div class="uk-card-media-left uk-cover-container">
                 <img
+                  loading="lazy"
                   src="public/clicquot.webp"
                   alt="An image of a Clicquot"
                   uk-cover
@@ -520,6 +505,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             >
               <div class="uk-card-media-left uk-cover-container">
                 <img
+                  loading="lazy"
                   src="public/spicy-chicken-wings-with-french-fries.webp"
                   alt="An image of spicy chicken wings with french fries"
                   uk-cover
@@ -554,6 +540,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             >
               <div class="uk-card-media-left uk-cover-container">
                 <img
+                  loading="lazy"
                   src="public/turkey-wings-with-french-fries.webp"
                   alt="An image of spicy chicken wings with french fries"
                   uk-cover
@@ -582,6 +569,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             </div>
           </li>
         </ul>
+        <div class="uk-text-center">
+          <a
+            class="cta-btn uk-button uk-button-primary uk-margin-small-top"
+            href="/our-menu/"
+          >
+            See Our Full Menu
+          </a>
+        </div>
       </div>
     </section>
     <section class="section-default overlay-section events">
@@ -592,7 +587,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         Events In SAO PAULO Lounge
       </p>
       <img
-        src="public/hero-image-1.webp"
+        loading="lazy"
+        src="public/hero-image-5.webp"
         alt="Image of an event in SAOP Lounge"
         class="section-overlay-image"
       />
@@ -611,6 +607,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       class="uk-flex-last@s uk-card-media-right uk-cover-container"
                     >
                       <img
+                        loading="lazy"
                         src="public/wednesday-ladies-night.webp"
                         alt="Image of Wednesday Ladies Night at SAO PAULO Lounge"
                         uk-cover
@@ -632,8 +629,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </p>
                       </div>
                       <div class="uk-card-footer">
-                        <a href="/events/" class="uk-button uk-button-text"
-                          >Read more</a
+                        <span class="uk-text-bold"
+                          >08:00PM Wednesday - 02:00AM Thursday</span
                         >
                       </div>
                     </div>
@@ -648,6 +645,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       class="uk-flex-last@s uk-card-media-right uk-cover-container"
                     >
                       <img
+                        loading="lazy"
                         src="public/friday-all-night-dance.webp"
                         alt="Image of Friday All-Night Dance at SAO PAULO Lounge"
                         uk-cover
@@ -669,8 +667,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </p>
                       </div>
                       <div class="uk-card-footer">
-                        <a href="/events/" class="uk-button uk-button-text"
-                          >Read more</a
+                        <span class="uk-text-bold"
+                          >10:00PM Friday - 06:00AM Saturday</span
                         >
                       </div>
                     </div>
@@ -685,6 +683,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       class="uk-flex-last@s uk-card-media-right uk-cover-container"
                     >
                       <img
+                        loading="lazy"
                         src="public/sunday-kaoroke-night.webp"
                         alt="Image of Sunday Karaoke Night at SAO PAULO Lounge"
                         uk-cover
@@ -706,8 +705,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </p>
                       </div>
                       <div class="uk-card-footer">
-                        <a href="/events/" class="uk-button uk-button-text"
-                          >Read more</a
+                        <span class="uk-text-bold"
+                          >06:00PM Sunday - 12:00AM Monday</span
                         >
                       </div>
                     </div>
@@ -722,6 +721,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       class="uk-flex-last@s uk-card-media-right uk-cover-container"
                     >
                       <img
+                        loading="lazy"
                         src="public/birthday-party.webp"
                         alt="Image of Saturday Birthday Parties at SAO PAULO Lounge"
                         uk-cover
@@ -743,8 +743,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </p>
                       </div>
                       <div class="uk-card-footer">
-                        <a href="/events/" class="uk-button uk-button-text"
-                          >Read more</a
+                        <span class="uk-text-bold"
+                          >07:00PM Saturday - 02:00AM Sunday</span
                         >
                       </div>
                     </div>
@@ -767,16 +767,17 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           <div class="footer-col">
             <h4>company</h4>
             <ul>
-              <li><a href="#">about us</a></li>
-              <li><a href="#">Events</a></li>
-              <li><a href="#">Reservations</a></li>
+              <li><a href="/about-us/">about us</a></li>
+              <li><a href="/events/">Events</a></li>
+              <li><a href="/reservations/">Reservations</a></li>
+              <li><a href="/our-menu/">Our Menu</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4>get help</h4>
             <ul>
               <li><a href="#">FAQ</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="/contact/">Contact</a></li>
             </ul>
           </div>
 

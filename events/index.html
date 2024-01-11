@@ -49,27 +49,16 @@
               <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav uk-visible@s">
                   <li><a href="/">Home</a></li>
+                  <li>
+                    <a href="/about-us/">About Us</a>
+                  </li>
                   <li class="uk-active">
                     <a href="/events/">Events</a>
-                    <div class="uk-navbar-dropdown">
-                      <ul class="uk-nav uk-navbar-dropdown-nav">
-                        <li>
-                          <a href="/events/ladies-night"> Ladies Night</a>
-                        </li>
-                        <li>
-                          <a href="/events/birthday-parties/">
-                            Birthday Parties</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
                   </li>
                   <li>
                     <a href="/reservations/">Reservations</a>
                   </li>
-                  <li>
-                    <a href="/about-us/">About Us</a>
-                  </li>
+
                   <li>
                     <a href="/contact/"> Contact </a>
                   </li>
@@ -89,38 +78,24 @@
         <div class="uk-offcanvas-bar">
           <button class="uk-offcanvas-close" type="button" uk-close></button>
           <p class="uk-h5 uk-text-muted">44 SAO PAULO Lounge</p>
-          <ul>
-            <li class="uk-active uk-animation-toggle">
-              <a href="/" class="uk-animation-scale-up uk-display-block"
-                >Home</a
-              >
+          <ul class="offcanvas-links">
+            <li class="uk-active">
+              <a href="/" class="uk-display-block">Home</a>
             </li>
             <li class="uk-margin-small-top uk-animation-toggle">
-              <a href="/events/" class="uk-animation-scale-up uk-display-block"
-                >Events</a
-              >
+              <a href="/events/" class="uk-display-block">Events</a>
             </li>
             <li class="uk-margin-small-top uk-animation-toggle">
-              <a
-                href="/reservations/"
-                class="uk-animation-scale-up uk-display-block"
-                >Reservations</a
-              >
+              <a href="/reservations/" class="uk-display-block">Reservations</a>
             </li>
             <li class="uk-margin-small-top uk-animation-toggle">
-              <a
-                href="/about-us/"
-                class="uk-animation-scale-up uk-display-block"
-                >About Us</a
-              >
+              <a href="/reservations/" class="uk-display-block">Our Menu</a>
             </li>
             <li class="uk-margin-small-top uk-animation-toggle">
-              <a
-                href="/contact/"
-                class="uk-animation-scale-up uk-display-block"
-              >
-                Contact
-              </a>
+              <a href="/about-us/" class="uk-display-block">About Us</a>
+            </li>
+            <li class="uk-margin-small-top uk-animation-toggle">
+              <a href="/contact/" class="uk-display-block"> Contact </a>
             </li>
           </ul>
 
@@ -142,7 +117,7 @@
         </ul>
       </div>
       <img
-        src="../public/hero-image-1.webp"
+        src="../public/hero-image-5.webp"
         alt="A nice looking restaurant and bar"
         class="overlay-image"
       />
@@ -170,7 +145,7 @@
           uk-grid
         >
           <div class="uk-card-media-left uk-cover-container">
-            <img src="../public/menu-image-4.webp" alt="" uk-cover />
+            <img src="../public/wednesday-ladies-night.webp" alt="" uk-cover />
             <canvas width="600" height="400"></canvas>
           </div>
           <div>
@@ -187,7 +162,9 @@
               </p>
             </div>
             <div class="uk-card-footer">
-              <a href="#" class="uk-button uk-button-text">Read more</a>
+              <span class="uk-text-bold"
+                >08:00PM Wednesday - 02:00AM Thursday</span
+              >
             </div>
           </div>
         </div>
@@ -196,7 +173,7 @@
           uk-grid
         >
           <div class="uk-card-media-left uk-cover-container">
-            <img src="../public/menu-image-3.webp" alt="" uk-cover />
+            <img src="../public/friday-all-night-dance.webp" alt="" uk-cover />
             <canvas width="600" height="400"></canvas>
           </div>
           <div>
@@ -213,7 +190,9 @@
               </p>
             </div>
             <div class="uk-card-footer">
-              <a href="#" class="uk-button uk-button-text">Read more</a>
+              <span class="uk-text-bold"
+                >10:00PM Friday - 06:00AM Saturday</span
+              >
             </div>
           </div>
         </div>
@@ -222,7 +201,7 @@
           uk-grid
         >
           <div class="uk-card-media-left uk-cover-container">
-            <img src="../public/menu-image-2.webp" alt="" uk-cover />
+            <img src="../public/sunday-kaoroke-night.webp" alt="" uk-cover />
             <canvas width="600" height="400"></canvas>
           </div>
           <div>
@@ -239,7 +218,7 @@
               </p>
             </div>
             <div class="uk-card-footer">
-              <a href="#" class="uk-button uk-button-text">Read more</a>
+              <span class="uk-text-bold">06:00PM Sunday - 12:00AM Monday</span>
             </div>
           </div>
         </div>
@@ -248,7 +227,7 @@
           uk-grid
         >
           <div class="uk-card-media-left uk-cover-container">
-            <img src="../public/menu-image-5.webp" alt="" uk-cover />
+            <img src="../public/birthday-party.webp" alt="" uk-cover />
             <canvas width="600" height="400"></canvas>
           </div>
           <div>
@@ -265,7 +244,9 @@
               </p>
             </div>
             <div class="uk-card-footer">
-              <a href="#" class="uk-button uk-button-text">Read more</a>
+              <span class="uk-text-bold"
+                >07:00PM Saturday - 02:00AM Sunday</span
+              >
             </div>
           </div>
         </div>
@@ -277,14 +258,17 @@
           <div class="footer-col">
             <h4>company</h4>
             <ul>
-              <li><a href="#">about us</a></li>
-              <li><a href="#">our services</a></li>
+              <li><a href="/about-us/">about us</a></li>
+              <li><a href="/events/">Events</a></li>
+              <li><a href="/reservations/">Reservations</a></li>
+              <li><a href="/our-menu/">Our Menu</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4>get help</h4>
             <ul>
               <li><a href="#">FAQ</a></li>
+              <li><a href="/contact/">Contact</a></li>
             </ul>
           </div>
 

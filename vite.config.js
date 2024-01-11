@@ -10,6 +10,7 @@ export default {
         events: resolve(__dirname, 'events/index.html'),
         contact: resolve(__dirname, 'contact/index.html'),
         reservations: resolve(__dirname, 'reservations/index.html'),
+        ourMenu: resolve(__dirname, 'our-menu/index.html'),
       },
     },
   },

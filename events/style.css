@@ -43,6 +43,15 @@ a:hover {
   position: relative;
 }
 
+.offcanvas-links a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.offcanvas-links a {
+  color: #bbbbbb;
+}
+
 header {
   position: relative;
   height: 500px;
@@ -64,7 +73,7 @@ header .overlay {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
 
