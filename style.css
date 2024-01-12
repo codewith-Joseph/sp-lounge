@@ -347,7 +347,8 @@ ul {
     display: none;
   }
 
-  .section-heading {
+  section.about-us .section-heading,
+  section.events .section-heading {
     text-align: start;
   }
   .wrapper .carousel {
