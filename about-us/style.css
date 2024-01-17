@@ -27,6 +27,7 @@ a {
 a:hover {
   cursor: pointer;
   text-decoration: none;
+  color: inherit;
 }
 
 .offcanvas-links a:hover {
@@ -92,10 +93,6 @@ section.section-default {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 35px;
-}
-
-section.about-us {
-  background-color: #f5f5f5;
 }
 
 section.about-us .content-wrapper {
