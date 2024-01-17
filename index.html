@@ -131,9 +131,17 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
       <div class="overlay"></div>
       <div class="text-overlay">
-        <h1 class="animate__animated animate__bounce text-white uk-text-center">
+        <p
+          class="animate__animated animate__bounce text-white uk-text-center uk-text-large uk-margin-remove-vertical"
+        >
+          Elevate Your Evenings at the Ultimate Destination for Nightlife
+        </p>
+        <h1
+          class="animate__animated animate__bounce text-white uk-text-center uk-margin-small-top"
+        >
           44 SAO PAULO Lounge
         </h1>
+
         <a class="uk-button uk-button-primary uk-button-large cta-btn"
           >Book A Reservation</a
         >
@@ -157,11 +165,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           seeking the epitome of nightlife excitement.
           <span class="uk-margin-small-top uk-display-block">
             <br />
-            <a href="/contact/" class="cta-btn uk-button uk-button-primary"
+            <a href="/about-us/" class="cta-btn uk-button uk-button-primary"
               >More About Us</a
             >
             <a
-              href="/contact/"
+              href="/reservations/"
               class="cta-btn-secondary uk-button uk-button-secondary uk-margin-small-left"
               >Order Now</a
             >
@@ -333,37 +341,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       </div>
       <div class="section-overlay"></div>
     </section>
-    <section class="section-default uk-background-muted">
-      <p class="section-heading">Book A Table</p>
-      <form class="uk-grid-small" uk-grid>
-        <div class="uk-width-1-4@s">
-          <select class="uk-select" aria-label="Select">
-            <option value="1">1 Person</option>
-            <option value="2">2 People</option>
-            <option value="3">3 People</option>
-            <option value="4">4 People</option>
-            <option value="5">5 People</option>
-            <option value="6">6 People</option>
-            <option value="7">7 People</option>
-            <option value="8">8 People</option>
-            <option value="9">9 People</option>
-            <option value="10">10 People</option>
-          </select>
-        </div>
-        <div class="uk-width-1-4@s">
-          <input class="uk-input" type="date" placeholder="date" />
-        </div>
 
-        <div class="uk-width-1-4@s">
-          <input class="uk-input" type="time" placeholder="time" />
-        </div>
-        <div class="uk-width-1-4@s">
-          <button class="cta-btn uk-button uk-button-primary">
-            Book A Table
-          </button>
-        </div>
-      </form>
-    </section>
     <section class="section-default menu">
       <p
         class="section-heading animate__animated"
@@ -595,14 +573,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         class="section-heading animate__animated"
         uk-scrollspy="cls: animate__rubberBand; repeat: false"
       >
-        Events In SAO PAULO Lounge
+        Events At 44 SAO PAULO Lounge
       </p>
-      <img
-        loading="lazy"
-        src="public/hero-image-5.webp"
-        alt="Image of an event in SAOP Lounge"
-        class="section-overlay-image"
-      />
+
       <div class="section-overlay"></div>
       <div class="section-overlay-content">
         <div class="section-overlay-content">
@@ -619,7 +592,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     >
                       <img
                         loading="lazy"
-                        src="public/wednesday-ladies-night.webp"
+                        src="public/wednesday-ladies-night.jpg"
                         alt="Image of Wednesday Ladies Night at SAO PAULO Lounge"
                         uk-cover
                       />
@@ -770,8 +743,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </div>
       </div>
     </section>
+    <a
+      href="#"
+      uk-totop
+      uk-scroll
+      class="uk-position-fixed uk-position-bottom-right"
+    ></a>
 
-    <!-- Footer Starts Here -->
     <footer class="footer">
       <div class="container">
         <div class="row">
@@ -787,7 +765,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           <div class="footer-col">
             <h4>get help</h4>
             <ul>
-              <li><a href="#">FAQ</a></li>
+              <li><a href="/about-us/#faqs">FAQs</a></li>
               <li><a href="/contact/">Contact</a></li>
             </ul>
           </div>
@@ -803,8 +781,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </div>
       </div>
     </footer>
-
-    <!-- Footer End Here -->
 
     <script type="module" src="./main.js"></script>
   </body>

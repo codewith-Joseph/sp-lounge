@@ -143,6 +143,7 @@ ul {
 .footer {
   background-color: #24262b;
   padding: 100px 70px;
+  padding-bottom: 20px;
 }
 .footer-col {
   width: 25%;
@@ -201,6 +202,10 @@ ul {
 }
 
 @media screen and (max-width: 750px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
   .footer-col {
     width: 50%;
     margin-bottom: 30px;

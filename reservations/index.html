@@ -13,6 +13,8 @@
 
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
+
+    <script src="https://js.paystack.co/v1/inline.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
     <link rel="stylesheet" href="./style.css" />
     <link
@@ -36,7 +38,7 @@
             <div uk-navbar>
               <div class="uk-navbar-left">
                 <a
-                  href="
+                  href="/
               "
                   class="logo"
                   >44 SAO PAULO Lounge</a
@@ -121,35 +123,79 @@
     </header>
     <section class="section-default">
       <p class="section-heading">Book A Table</p>
-      <form class="uk-grid-small" uk-grid>
-        <div class="uk-width-1-4@s">
-          <select class="uk-select" aria-label="Select">
-            <option value="1">1 Person</option>
-            <option value="2">2 People</option>
-            <option value="3">3 People</option>
-            <option value="4">4 People</option>
-            <option value="5">5 People</option>
-            <option value="6">6 People</option>
-            <option value="7">7 People</option>
-            <option value="8">8 People</option>
-            <option value="9">9 People</option>
-            <option value="10">10 People</option>
-          </select>
+      <form
+        id="order-form"
+        class="uk-form-stacked uk-width-1-2@s uk-margin-auto"
+      >
+        <div class="uk-margin">
+          <label class="uk-form-label" for="item">Select Item:</label>
+          <div class="uk-form-controls">
+            <select id="item" name="item" class="uk-select" required>
+              <option value="spicy_chicken" data-price="8000">
+                Spicy Chicken - N8000
+              </option>
+              <option value="spicy_turkey" data-price="8000">
+                Spicy Turkey - N8000
+              </option>
+              <option value="spicy_goat_meat" data-price="5000">
+                Spicy Goat Meat - N5000
+              </option>
+              <option value="spicy_pepper_beef" data-price="3000">
+                Spicy Pepper Beef - N3000
+              </option>
+              <option value="spicy_chicken_gizzards" data-price="3500">
+                Spicy Chicken Gizzards - N3500
+              </option>
+              <option value="seafood_fish" data-price="3000">
+                Seafood Fish - N3000
+              </option>
+            </select>
+          </div>
         </div>
-        <div class="uk-width-1-4@s">
-          <input class="uk-input" type="date" placeholder="date" />
+        <div class="uk-margin">
+          <label class="uk-form-label" for="quantity">Quantity:</label>
+          <div class="uk-form-controls">
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              min="1"
+              class="uk-input"
+              required
+            />
+          </div>
         </div>
-
-        <div class="uk-width-1-4@s">
-          <input class="uk-input" type="time" placeholder="time" />
+        <div class="uk-margin">
+          <label class="uk-form-label" for="customer-email"
+            >Customer Email:</label
+          >
+          <div class="uk-form-controls">
+            <input
+              type="email"
+              id="customer-email"
+              name="customer-email"
+              class="uk-input"
+              required
+            />
+          </div>
         </div>
-        <div class="uk-width-1-4@s">
-          <button class="submit-btn uk-button uk-button-primary">
-            Book A Table
+        <div class="uk-margin">
+          <button
+            type="button"
+            id="submit-order"
+            class="uk-button uk-button-primary uk-width-1-1"
+          >
+            Place Order
           </button>
         </div>
       </form>
     </section>
+    <a
+      href="#"
+      uk-totop
+      uk-scroll
+      class="uk-position-fixed uk-position-bottom-right"
+    ></a>
     <footer class="footer">
       <div class="container">
         <div class="row">
@@ -165,7 +211,7 @@
           <div class="footer-col">
             <h4>get help</h4>
             <ul>
-              <li><a href="#">FAQ</a></li>
+              <li><a href="/about-us/#faqs">FAQ</a></li>
               <li><a href="/contact/">Contact</a></li>
             </ul>
           </div>
@@ -181,6 +227,6 @@
         </div>
       </div>
     </footer>
-    <script type="module" src="./main.js"></script>
+    <script type="module" defer src="./main.js"></script>
   </body>
 </html>
