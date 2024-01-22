@@ -39,6 +39,15 @@ a:hover {
   color: #bbbbbb;
 }
 
+.uk-navbar-nav > li.uk-active > a {
+  color: #fff;
+}
+
+nav.uk-navbar-container.uk-navbar-sticky {
+  background-color: #2d2d2d;
+  color: #ffffff;
+}
+
 header {
   position: relative;
   height: 500px;
@@ -51,6 +60,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
+  object-fit: cover;
 }
 
 .uk-breadcrumb > * > * {
@@ -115,6 +125,7 @@ section.about-us .content-wrapper .content-text {
 
 section.about-us .content-wrapper .content-image {
   object-fit: cover;
+  aspect-ratio: 3 / 2;
 }
 
 footer ul {

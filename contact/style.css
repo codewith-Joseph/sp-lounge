@@ -66,6 +66,15 @@ header {
   margin-bottom: 0;
 }
 
+nav.uk-navbar-container.uk-navbar-sticky {
+  background-color: #2d2d2d;
+  color: #ffffff;
+}
+
+.uk-navbar-nav > li.uk-active > a {
+  color: #fff;
+}
+
 header .overlay {
   position: absolute;
   top: 0;
@@ -105,14 +114,16 @@ section.section-default {
 }
 
 .submit-btn:hover {
-  background-color: #0d71d4;
+  background-color: #fff;
   border-radius: 0;
   scale: 1.1;
+  color: #fff !important;
 }
 
 .submit-btn::after {
   content: '';
-  background: #1e87f0;
+  background: #2d2d2d;
+
   width: 0;
   height: 100%;
   position: absolute;
@@ -163,6 +174,10 @@ a.uk-totop.uk-visible {
 a.uk-totop:hover {
   color: #fff;
   transform: translateY(-3px);
+}
+
+.text-white {
+  color: #fff;
 }
 
 .footer {

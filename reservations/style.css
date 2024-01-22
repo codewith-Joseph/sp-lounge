@@ -136,6 +136,15 @@ ul {
   list-style: none;
 }
 
+nav.uk-navbar-container.uk-navbar-sticky {
+  background-color: #2d2d2d;
+  color: #ffffff;
+}
+
+.uk-navbar-nav > li.uk-active > a {
+  color: #fff;
+}
+
 a.uk-totop {
   background-color: #007bff;
   color: #fff;
