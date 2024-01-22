@@ -122,6 +122,138 @@
       />
     </header>
     <section class="section-default uk-light uk-background-secondary">
+      <div class="uk-container">
+        <form
+          class="uk-form-stacked uk-width-1-2@s uk-margin-auto"
+          action="https://formsubmit.co/splounge44@gmail.com"
+          method="POST"
+        >
+          <fieldset class="uk-fieldset">
+            <!-- Question 1: Full Name -->
+            <div class="uk-margin">
+              <label class="uk-form-label" for="full-name">Full Name</label>
+              <div class="uk-form-controls">
+                <input
+                  class="uk-input"
+                  type="text"
+                  id="full-name"
+                  name="Full Name"
+                  placeholder="Musa Ahmad"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Question 2: Email Address -->
+            <div class="uk-margin">
+              <label class="uk-form-label" for="email">Email Address</label>
+              <div class="uk-form-controls">
+                <input
+                  class="uk-input"
+                  type="email"
+                  name="Email"
+                  id="email"
+                  placeholder="musaahmad@example.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Question 3: Phone Number -->
+            <div class="uk-margin">
+              <label class="uk-form-label" for="phone">Phone Number</label>
+              <div class="uk-form-controls">
+                <input
+                  class="uk-input"
+                  name="Phone Number"
+                  type="tel"
+                  id="phone"
+                  placeholder="+234819857608"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Question 4: Date and Time of Reservation -->
+            <div class="uk-margin">
+              <label class="uk-form-label" for="reservation-date-time"
+                >Date and Time of Reservation</label
+              >
+              <div class="uk-form-controls">
+                <input
+                  class="uk-input"
+                  name="Date"
+                  type="datetime-local"
+                  id="reservation-date-time"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Question 5: Number of Guests -->
+            <div class="uk-margin">
+              <label class="uk-form-label" for="number-of-guests"
+                >Number of Guests</label
+              >
+              <div class="uk-form-controls">
+                <input
+                  class="uk-input"
+                  type="number"
+                  name="Number of Guests"
+                  id="number-of-guests"
+                  min="1"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Question 6: Special Requests or Comments -->
+            <div class="uk-margin">
+              <label class="uk-form-label" for="special-requests"
+                >Special Requests or Comments</label
+              >
+              <div class="uk-form-controls">
+                <textarea
+                  class="uk-textarea"
+                  id="special-requests"
+                  name="Special Requests"
+                  rows="5"
+                  placeholder="Any special requests or comments?"
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Question 7: Where did you hear about us? -->
+            <div class="uk-margin">
+              <label class="uk-form-label" for="heard-about"
+                >Where did you hear about us?</label
+              >
+              <div class="uk-form-controls">
+                <select
+                  class="uk-select"
+                  id="heard-about"
+                  name="Where Did You Hear About Us?"
+                >
+                  <option value="">Select an option</option>
+                  <option value="Word of Mouth">Word of Mouth</option>
+                  <option value="Online Search">Online Search</option>
+                  <option value="Social Media">Social Media</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="uk-margin">
+              <button class="uk-button uk-button-primary" type="submit">
+                Submit Reservation
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <section class="section-default uk-light uk-background-secondary">
       <p class="section-heading">Order Food</p>
       <form
         id="order-form"
